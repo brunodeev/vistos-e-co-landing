@@ -1,0 +1,12 @@
+.app-header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #fc6346;
+
+    img {
+        width: 160px;
+        height: 100%;
+        padding: 8px 0px 10px 0px;
+    }
+}
