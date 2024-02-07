@@ -1,5 +1,8 @@
 main {
     background-color: #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .main-section {
@@ -7,16 +10,19 @@ main {
     height: 600px;
     position: relative;
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
-
     
     .headline {
         z-index: 1;
         width: 100%;
-        padding: 50px 50px 0px 50px;
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
 
         h1 {
             width: 700px;
@@ -40,7 +46,7 @@ main {
 
     button {
         z-index: 1;
-        margin: 20px 0px 20px 50px;
+        margin-top: 40px;
         border: none;
         width: 390px;
         height: 50px;
@@ -63,23 +69,53 @@ main {
 }
 
 .second-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     background-color: #083d77;
     font-family: 'Poppins', sans-serif;
     color: #f9f9f9;
-    padding: 20px 50px;
 
-    h1 {
-        font-size: 50px;
-        font-weight: 600;
-        line-height: 42px;
-        margin: 10px 0px 10px 0px;
+    .second-headline {
+        width: 100%;
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        h1 {
+            width: 600px;
+            font-size: 45px;
+            font-weight: 600;
+            line-height: 42px;
+            margin: 10px 0px 10px 0px;
+        }
+    
+        p {
+            width: 900px;
+            font-size: 25px;
+            font-weight: 400;
+            line-height: 23px;
+            margin: 20px 0px 50px 0px;
+        }
     }
+    
+}
 
-    p {
-        font-size: 25px;
-        font-weight: 400;
-        line-height: 23px;
-        margin-top: 20px;
+.third-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    color: #083d77;
+
+    .third-headline {
+        h1 {
+            font-size: 40px;
+            margin-top: 50px;
+        }
     }
 }
 
