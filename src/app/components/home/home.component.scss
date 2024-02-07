@@ -16,7 +16,7 @@ main {
     .headline {
         z-index: 1;
         width: 100%;
-        padding: 0px 50px 0px 50px;
+        padding: 50px 50px 0px 50px;
 
         h1 {
             width: 700px;
@@ -39,10 +39,17 @@ main {
     }
 
     button {
+        z-index: 1;
         margin: 20px 0px 20px 50px;
         border: none;
         width: 390px;
         height: 50px;
+        background-color: #fc6346;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        border-radius: 30px;
     }
 
     img {
@@ -54,28 +61,44 @@ main {
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 760px) {
     .main-section .headline {
         z-index: 1;
         width: 100%;
-        padding: 0px 20px 0px 20px;
+        padding: 0px 20px 30px 20px;
 
         h1 {
+            width: 350px;
             font-size: 32px;
             font-weight: 800;
             color: #083d77;
-            line-height: 50px;
+            line-height: 28px;
             padding-bottom: 20px;
         }
 
         p {
-            width: 700px;
-            font-size: 25px;
-            font-weight: 500px;
-            line-height: 23px;
+            width: 350px;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 15px;
             padding: 10px 0px 10px 0px;
             color: #083d77;
             opacity: .85;
         }
     }
+
+    .main-section button {
+        z-index: 1;
+        margin: 20px 20px 20px 20px;
+        border: none;
+        width: 335px;
+        height: 50px;
+        background-color: #fc6346;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        border-radius: 30px;
+    }
+
 }

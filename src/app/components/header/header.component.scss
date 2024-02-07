@@ -10,3 +10,18 @@
         padding: 8px 0px 10px 0px;
     }
 }
+
+@media (max-width: 760px) {
+    .app-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fc6346;
+    
+        img {
+            width: 160px;
+            height: 100%;
+            padding: 8px 0px 10px 0px;
+        }
+    }
+}
