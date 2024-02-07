@@ -4,7 +4,7 @@ main {
 
 .main-section {
     width: 100%;
-    height: 500px;
+    height: 600px;
     position: relative;
     display: flex;
     align-items: start;
@@ -28,9 +28,9 @@ main {
         }
 
         p {
-            width: 700px;
+            width: 750px;
             font-size: 25px;
-            font-weight: 500px;
+            font-weight: 500;
             line-height: 23px;
             padding: 10px 0px 10px 0px;
             color: #083d77;
@@ -50,6 +50,7 @@ main {
         font-weight: 600;
         font-size: 16px;
         border-radius: 30px;
+        transition: all 0.4s ease;
     }
 
     img {
@@ -61,6 +62,68 @@ main {
     }
 }
 
+.second-section {
+    background-color: #083d77;
+    font-family: 'Poppins', sans-serif;
+    color: #f9f9f9;
+    padding: 20px 50px;
+
+    h1 {
+        font-size: 50px;
+        font-weight: 600;
+        line-height: 42px;
+        margin: 10px 0px 10px 0px;
+    }
+
+    p {
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 23px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 880px) {                 // Tablets
+    .main-section .headline {
+        z-index: 1;
+        width: 100%;
+        padding: 0px 0px 10px 50px;
+
+        h1 {
+            width: 700px;
+            font-size: 55px;
+            font-weight: 800;
+            color: #083d77;
+            line-height: 50px;
+            padding-bottom: 20px;
+        }
+
+        p {
+            width: 650px;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 23px;
+            padding-bottom: 10px;
+            color: #083d77;
+            opacity: .85;
+        }
+    }
+
+    .main-section button {
+        z-index: 1;
+        margin: 0px 20px 10px 50px;
+        border: none;
+        width: 335px;
+        height: 50px;
+        background-color: #fc6346;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        border-radius: 30px;
+    }
+}
+
 @media (max-width: 760px) {
     .main-section .headline {
         z-index: 1;
@@ -69,7 +132,7 @@ main {
 
         h1 {
             width: 350px;
-            font-size: 32px;
+            font-size: 31px;
             font-weight: 800;
             color: #083d77;
             line-height: 28px;
@@ -100,5 +163,10 @@ main {
         font-size: 16px;
         border-radius: 30px;
     }
+}
 
+button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
 }

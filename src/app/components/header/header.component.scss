@@ -1,27 +1,56 @@
 .app-header {
+    z-index: 2;
+    width: 100%;
+    position: fixed;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
-    background-color: #fc6346;
+    backdrop-filter: saturate(180%) blur(18px);
+    background-color: #ff3209b4;
 
-    img {
-        width: 160px;
-        height: 100%;
-        padding: 8px 0px 10px 0px;
+    .navigate {
+        width: 760px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+        img {
+            width: 55px;
+            margin: 10px 0px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        nav {
+            width: 500px;
+            display: flex;
+            justify-content: space-evenly;
+            a {
+                text-decoration: none;
+                color: #f9f9f9d7;
+                margin-left: 10px;
+                font-family: 'Poppins', sans-serif;
+                font-size: 11px;
+                transition: all 0.3s ease-in-out;
+
+                &:hover,
+                &:focus,
+                &:active {
+                    color: #f9f9f9;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+        }
+        
     }
 }
 
 @media (max-width: 760px) {
     .app-header {
-        display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #fc6346;
-    
-        img {
-            width: 160px;
-            height: 100%;
-            padding: 8px 0px 10px 0px;
-        }
     }
 }
