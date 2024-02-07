@@ -112,9 +112,42 @@ main {
     color: #083d77;
 
     .third-headline {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
         h1 {
             font-size: 40px;
-            margin-top: 50px;
+            margin: 50px 0px 60px 0px;
+        }
+
+        hr {
+            border-top: 2px solid #083d77;
+            border-radius: 5px;
+            width: 350px;
+        }
+
+        .card-plane {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 500px;
+            padding: 60px 0px 60px 0px;
+
+            img {
+                max-width: 140px;
+                margin-bottom: 20px;
+                margin-right: 15px;
+            }
+
+            p {
+                text-align: center;
+                font-size: 25px;
+                font-weight: 500;
+                line-height: 25px;
+            }
         }
     }
 }
