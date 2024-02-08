@@ -94,7 +94,7 @@ main {
         }
     
         p {
-            width: 900px;
+            width: 880px;
             font-size: 25px;
             font-weight: 400;
             line-height: 23px;
@@ -160,6 +160,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 
     .nossas-assessorias {
         background-color: #fc6346;
@@ -197,7 +198,6 @@ main {
             img {
                 z-index: 1;
                 position: relative;
-                width: 360px;
                 height: 450px;
                 margin: 50px 30px;
                 transition: all 0.3s ease;
@@ -263,7 +263,62 @@ main {
     }
 }
 
-@media (max-width: 880px) {                 // Tablets
+.direitos {
+    img {
+        width: 30px;
+    }
+}
+
+@media (max-width: 1175px) {
+    .third-section {
+        .third-headline {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            h1 {
+                font-size: 40px;
+                margin: 50px 0px 60px 0px;
+                width: 500px;
+                text-align: center;
+            }
+    
+            .card-grid {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+    
+            .card-plane {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+                width: 500px;
+                padding: 30px 0px 80px 0px;
+    
+                img {
+                    max-width: 120px;
+                    margin-bottom: 20px;
+                    margin-right: 15px;
+                }
+    
+                p {
+                    width: 350px;
+                    text-align: center;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 880px) {                 // Tablets///////////////////////////
     .main-section .headline {
         z-index: 1;
         width: 100%;
@@ -301,6 +356,81 @@ main {
         font-weight: 600;
         font-size: 16px;
         border-radius: 30px;
+    }
+
+    .second-section {
+        .second-headline {
+            width: 100%;
+            padding-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+    
+            h1 {
+                width: 600px;
+                font-size: 40px;
+                font-weight: 600;
+                line-height: 42px;
+                margin: 10px 0px 10px 0px;
+            }
+        
+            p {
+                width: 720px;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 23px;
+                margin: 20px 0px 50px 0px;
+            }
+        }
+        
+    }
+
+    .third-section {
+        .third-headline {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            h1 {
+                font-size: 40px;
+                margin: 50px 0px 60px 0px;
+                width: 500px;
+                text-align: center;
+            }
+    
+            .card-grid {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+    
+            .card-plane {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+                width: 500px;
+                padding: 30px 0px 80px 0px;
+    
+                img {
+                    max-width: 120px;
+                    margin-bottom: 20px;
+                    margin-right: 15px;
+                }
+    
+                p {
+                    width: 350px;
+                    text-align: center;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 25px;
+                }
+            }
+        }
     }
 }
 
