@@ -43,20 +43,125 @@
         </div>
         
         <div class="cards-assessoria">
-            <!-- <div class="arrows">
-                <img class="arrow1" src="./assets/arrow2.png">
-                <img class="arrow2" src="./assets/arrow2.png">
-            </div> -->
-            <div class="card">
-                <img src="./assets/card.png">
-                <img src="./assets/card.png">
-                <img src="./assets/card.png">
-                <img src="./assets/card.png">
-                <img src="./assets/card.png">
-                <img src="./assets/card.png">
-                <img src="./assets/card.png">
+            <button class="arrow1" (click)="previous()"><img src="./assets/arrow2.png"></button>
+            <button class="arrow2" (click)="next()"><img src="./assets/arrow2.png"></button>
+            <div class="cards-container">
+                <img *ngFor="let image of getImagensExibicao()" [src]="image">
             </div>
         </div>
         <img class="imagem" src="./assets/passport.jpg">
+    </section>
+
+    <section class="razoes">
+        <h1>RAZÕES PARA ESCOLHER A VISTOS & CO.</h1>
+
+        <div class="razoes-card">
+            <p>Escolher a nossa empresa significa optar por excelência, eficiência e tranquilidade durante todo o seu processo</p>
+        </div>
+        <div class="razoes-card">
+            <p>Valorizamos cada cliente, oferecendo um atendimento personalizado para entender e atender às suas demandas específicas</p>
+        </div>
+    </section>
+
+    <section class="missao">
+        <h1>NOSSA MISSÃO</h1>
+
+        <div class="missao-text">
+            Descomplicar a jornada global dos nossos clientes, proporcionando serviços de vistos e traduções de alta qualidade.
+            Comprometemo-nos a oferecer soluções eficazes, visando tornar o processo de documentação internacional acessível e bem-sucedido.
+        </div>
+    </section>
+
+    <section class="responsavel">
+        <h1>QUEM SERÁ RESPONSÁVEL POR CONDUZIR O SEU PROCESSO?</h1>
+        <div class="responsavel-body">
+            <img src="">
+            <p>Me chamo Lyandra Eduarda, sou casada e mãe de uma linda filha. Em 2017, minha trajetória profissional me apresentou ao fascinante universo dos vistos. Desde então, dedico-me constantemente a aprimorar meus conhecimentos em assuntos internacionais.</p>
+            <p>A Vistos &CO. é fruto da minha sólida experiência e paixão por seguir algo que sempre trouxe brilho aos meus olhos: tornar realidade os sonhos de pessoas como eu.</p>
+        </div>
+    </section>
+
+    <section class="duvidas">
+        <div class="duvidas-cards">
+            <div class="duvida-card">
+                <div class="duvida-card-title">
+                    <h3>Quais são as opções de pagamento disponíveis?</h3>
+                    <button><img src=""></button>
+                </div>
+                <div class="duvida-card-body">
+                    <p>Nossa assessoria oferece diversas opções de pagamento para maior comodidade dos clientes. O pagamento dos nossos serviços pode ser feito através de PIX, boleto ou parcelado incluindo as taxas da plataforma de pagamento. O pagamento das Taxas Consulares podem ser feitos via boleto ou pelo cartão de crédito do cliente.</p>
+                </div>
+            </div>
+            <div class="duvida-card">
+                <div class="duvida-card-title">
+                    <h3>Quais são as opções de pagamento disponíveis?</h3>
+                    <button><img src=""></button>
+                </div>
+                <div class="duvida-card-body">
+                    <p>Nossa assessoria oferece diversas opções de pagamento para maior comodidade dos clientes. O pagamento dos nossos serviços pode ser feito através de PIX, boleto ou parcelado incluindo as taxas da plataforma de pagamento. O pagamento das Taxas Consulares podem ser feitos via boleto ou pelo cartão de crédito do cliente.</p>
+                </div>
+            </div>
+            <div class="duvida-card">
+                <div class="duvida-card-title">
+                    <h3>Quais são as opções de pagamento disponíveis?</h3>
+                    <button><img src=""></button>
+                </div>
+                <div class="duvida-card-body">
+                    <p>Nossa assessoria oferece diversas opções de pagamento para maior comodidade dos clientes. O pagamento dos nossos serviços pode ser feito através de PIX, boleto ou parcelado incluindo as taxas da plataforma de pagamento. O pagamento das Taxas Consulares podem ser feitos via boleto ou pelo cartão de crédito do cliente.</p>
+                </div>
+            </div>
+            <div class="duvida-card">
+                <div class="duvida-card-title">
+                    <h3>Quais são as opções de pagamento disponíveis?</h3>
+                    <button><img src=""></button>
+                </div>
+                <div class="duvida-card-body">
+                    <p>Nossa assessoria oferece diversas opções de pagamento para maior comodidade dos clientes. O pagamento dos nossos serviços pode ser feito através de PIX, boleto ou parcelado incluindo as taxas da plataforma de pagamento. O pagamento das Taxas Consulares podem ser feitos via boleto ou pelo cartão de crédito do cliente.</p>
+                </div>
+            </div>
+            <div class="duvida-card">
+                <div class="duvida-card-title">
+                    <h3>Quais são as opções de pagamento disponíveis?</h3>
+                    <button><img src=""></button>
+                </div>
+                <div class="duvida-card-body">
+                    <p>Nossa assessoria oferece diversas opções de pagamento para maior comodidade dos clientes. O pagamento dos nossos serviços pode ser feito através de PIX, boleto ou parcelado incluindo as taxas da plataforma de pagamento. O pagamento das Taxas Consulares podem ser feitos via boleto ou pelo cartão de crédito do cliente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fcd">
+        <div class="fcd-top">
+            <h1>FICOU COM ALGUMA DÚVIDA?</h1>
+            <h3>FALE COM A GENTE!</h3>
+        </div>
+
+        <div class="fcd-card">
+            <form>
+                <input type="text" placeholder="Nome" />
+                <input type="text" placeholder="Email" />
+                <input type="text" placeholder="Sua dúvida" />
+                <input type="submit" value="Enviar"/>
+            </form>
+        </div>
+    </section>
+
+    <section class="depoimentos">
+        <h1>DEPOIMENTOS DE CLIENTES</h1>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et bibendum arcu. Phasellus purus orci, pulvinar in est accumsan, efficitur imperdiet nibh. Sed mauris risus, vulputate a maximus eget, semper in justo. Donec ut tellus quis sapien sodales vulputate a in tellus. Maecenas efficitur neque quam, mollis vehicula felis ornare et. Etiam feugiat laoreet nisi non pharetra. In hac habitasse platea dictumst. Nullam et mollis lorem, ac varius lorem”</p>
+        <h3>- Vonisleia</h3>
+    </section>
+
+    <section class="contato">
+        <h3>Contato</h3>
+        <hr>
+        <p>+55 (00) 99898-9898 - Lyandra</p>
+        <img src="./assets/instagram.png">
+    </section>
+
+    <section class="direitos">
+        <p>Copyright © 2024. Todos os direitos reservados.</p>
+        <img src="./assets/logo.png">
     </section>
 </main>
