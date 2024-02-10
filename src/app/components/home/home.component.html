@@ -90,46 +90,46 @@
             <h1>DÚVIDAS FREQUENTES</h1>
         </div>
         <div class="duvidas-cards">
-            <div class="duvida-card">
+            <div class="duvida-card" (click)="changeCard1()">
                 <div class="duvida-card-title">
                     <h3>Quais são as opções de pagamento disponíveis?</h3>
-                    <button (click)="changeCard1()" [style.transform]="cardBodyVisible1 == true ? 'rotate(-90deg)' : 'rotate(90deg)'"><img src="./assets/arrow2.png"></button>
+                    <button [style.transform]="cardBodyVisible1 == true ? 'rotate(-90deg)' : 'rotate(90deg)'"><img src="./assets/arrow-blue.png"></button>
                 </div>
                 <div *ngIf="cardBodyVisible1">
                     <p [style]="'margin-bottom: 20px'">Nossa assessoria oferece diversas opções de pagamento para maior comodidade dos clientes. O pagamento dos nossos serviços pode ser feito através de PIX, boleto ou parcelado incluindo as taxas da plataforma de pagamento. O pagamento das Taxas Consulares podem ser feitos via boleto ou pelo cartão de crédito do cliente.</p>
                 </div>
             </div>
-            <div class="duvida-card">
+            <div class="duvida-card" (click)="changeCard2()">
                 <div class="duvida-card-title">
                     <h3>Quais são as opções de pagamento disponíveis?</h3>
-                    <button (click)="changeCard2()" [style.transform]="cardBodyVisible2 == true ? 'rotate(-90deg)' : 'rotate(90deg)'"><img src="./assets/arrow2.png"></button>
+                    <button [style.transform]="cardBodyVisible2 == true ? 'rotate(-90deg)' : 'rotate(90deg)'"><img src="./assets/arrow-blue.png"></button>
                 </div>
                 <div *ngIf="cardBodyVisible2">
                     <p [style]="'margin-bottom: 20px'">Nossa assessoria oferece diversas opções de pagamento para maior comodidade dos clientes. O pagamento dos nossos serviços pode ser feito através de PIX, boleto ou parcelado incluindo as taxas da plataforma de pagamento. O pagamento das Taxas Consulares podem ser feitos via boleto ou pelo cartão de crédito do cliente.</p>
                 </div>
             </div>
-            <div class="duvida-card">
+            <div class="duvida-card" (click)="changeCard3()">
                 <div class="duvida-card-title">
                     <h3>Quais são as opções de pagamento disponíveis?</h3>
-                    <button (click)="changeCard3()" [style.transform]="cardBodyVisible3 == true ? 'rotate(-90deg)' : 'rotate(90deg)'"><img src="./assets/arrow2.png"></button>
+                    <button [style.transform]="cardBodyVisible3 == true ? 'rotate(-90deg)' : 'rotate(90deg)'"><img src="./assets/arrow-blue.png"></button>
                 </div>
                 <div *ngIf="cardBodyVisible3">
                     <p [style]="'margin-bottom: 20px'">Nossa assessoria oferece diversas opções de pagamento para maior comodidade dos clientes. O pagamento dos nossos serviços pode ser feito através de PIX, boleto ou parcelado incluindo as taxas da plataforma de pagamento. O pagamento das Taxas Consulares podem ser feitos via boleto ou pelo cartão de crédito do cliente.</p>
                 </div>
             </div>
-            <div class="duvida-card">
+            <div class="duvida-card" (click)="changeCard4()">
                 <div class="duvida-card-title">
                     <h3>Quais são as opções de pagamento disponíveis?</h3>
-                    <button (click)="changeCard4()" [style.transform]="cardBodyVisible4 == true ? 'rotate(-90deg)' : 'rotate(90deg)'"><img src="./assets/arrow2.png"></button>
+                    <button [style.transform]="cardBodyVisible4 == true ? 'rotate(-90deg)' : 'rotate(90deg)'"><img src="./assets/arrow-blue.png"></button>
                 </div>
                 <div *ngIf="cardBodyVisible4">
                     <p [style]="'margin-bottom: 20px'">Nossa assessoria oferece diversas opções de pagamento para maior comodidade dos clientes. O pagamento dos nossos serviços pode ser feito através de PIX, boleto ou parcelado incluindo as taxas da plataforma de pagamento. O pagamento das Taxas Consulares podem ser feitos via boleto ou pelo cartão de crédito do cliente.</p>
                 </div>
             </div>
-            <div class="duvida-card">
+            <div class="duvida-card" (click)="changeCard5()">
                 <div class="duvida-card-title">
                     <h3>Quais são as opções de pagamento disponíveis?</h3>
-                    <button (click)="changeCard5()" [style.transform]="cardBodyVisible5 == true ? 'rotate(-90deg)' : 'rotate(90deg)'"><img src="./assets/arrow2.png"></button>
+                    <button [style.transform]="cardBodyVisible5 == true ? 'rotate(-90deg)' : 'rotate(90deg)'"><img src="./assets/arrow-blue.png"></button>
                 </div>
                 <div *ngIf="cardBodyVisible5">
                     <p [style]="'margin-bottom: 20px'">Nossa assessoria oferece diversas opções de pagamento para maior comodidade dos clientes. O pagamento dos nossos serviços pode ser feito através de PIX, boleto ou parcelado incluindo as taxas da plataforma de pagamento. O pagamento das Taxas Consulares podem ser feitos via boleto ou pelo cartão de crédito do cliente.</p>
@@ -146,10 +146,16 @@
 
         <div class="fcd-card">
             <form>
-                <input type="text" placeholder="Nome" />
-                <input type="text" placeholder="Email" />
-                <input type="text" placeholder="Sua dúvida" />
-                <input type="submit" value="Enviar"/>
+                <label for="nome">Nome</label>
+                <input id="nome" class="normal-duvida" type="text" placeholder="Nome" />
+
+                <label for="email">Email</label>
+                <input id="email" class="normal-duvida" type="text" placeholder="Email" />
+
+                <label for="duvida">Mensagem</label>
+                <textarea id="duvida" class="caixa-duvida" type="text" placeholder="Sua dúvida"></textarea>
+
+                <input class="enviar" type="submit" value="Enviar"/>
             </form>
         </div>
     </section>
@@ -162,7 +168,7 @@
 
     <section class="contato">
         <h3>Contato</h3>
-        <hr>
+        <span></span>
         <p>+55 (00) 99898-9898 - Lyandra</p>
         <img src="./assets/instagram.png">
     </section>

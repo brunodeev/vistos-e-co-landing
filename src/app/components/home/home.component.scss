@@ -422,6 +422,10 @@ main {
             padding: 0px 20px;
             margin-bottom: 30px;
 
+            &:hover {
+                cursor: pointer;
+            }
+
             .duvida-card-title {
                 display: flex;
                 flex-direction: row;
@@ -437,7 +441,7 @@ main {
                     background-color: transparent;
 
                     img {
-                        width: 20px;
+                        width: 10px;
                     }
 
                     &:hover {
@@ -475,12 +479,131 @@ main {
 
     .fcd-card {
         background-color: #f9f9f9;
+        width: 650px;
+        margin-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            width: 600px;
+            margin: 30px 0px;
+
+            label {
+                color: #fc6346;
+                margin-bottom: 5px;
+            }
+
+            .normal-duvida {
+                width: 100%;
+                height: 45px;
+                border: none;
+                background-color: #e4e4e4;
+                border-radius: 10px;
+                padding-left: 10px;
+                outline: none;
+                font-family: 'Poppins', sans-serif;
+                margin-bottom: 15px;
+            }
+
+            .caixa-duvida {
+                min-width: 100%;
+                max-width: 100%;
+                min-height: 100px;
+                border: none;
+                background-color: #e4e4e4;
+                border-radius: 10px;
+                padding-top: 10px;
+                padding-left: 10px;
+                outline: none;
+                font-family: 'Poppins', sans-serif;
+                margin-bottom: 15px;
+            }
+
+            .enviar {
+                height: 55px;
+                width: 100%;
+                border-radius: 10px;
+                border: none;
+                background-color: #fc6346;
+                font-family: 'Poppins', sans-serif;
+                color: #f9f9f9;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.depoimentos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #083e77;
+    margin-bottom: 70px;
+
+    h1 {
+        margin-top: 50px;
+        font-size: 30px;
+    }
+
+    p {
+        width: 800px;
+        text-align: center;
+        margin: 50px 0px;
+        font-weight: 500;
+    }
+}
+
+.contato {
+    background-color: #083d77;
+    color: #f9f9f9;
+    padding: 50px 50px;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    span {
+        content: '';
+        background-color: #f9f9f9;
+        width: 100%;
+        height: 1px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    img {
+        width: 25px;
     }
 }
 
 .direitos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fc6346;
+    color: #f9f9f9;
+    padding: 30px 0px;
+
     img {
-        width: 30px;
+        width: 80px;
+        margin-top: 20px;
     }
 }
 
