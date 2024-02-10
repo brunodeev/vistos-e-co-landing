@@ -11,6 +11,12 @@ import { CommonModule } from '@angular/common';
 })
 export class HomeComponent {
 
+  cardBodyVisible1: boolean = false;
+  cardBodyVisible2: boolean = false;
+  cardBodyVisible3: boolean = false;
+  cardBodyVisible4: boolean = false;
+  cardBodyVisible5: boolean = false;
+
   cardImages: string[] = [
     './assets/card.png', './assets/card.png', './assets/card.png', './assets/card.png', './assets/card.png', './assets/card.png', './assets/card.png', './assets/card.png', './assets/card.png', './assets/card.png',
   ];
@@ -34,5 +40,21 @@ export class HomeComponent {
     if(this.indiceAtual < (this.cardImages.length - this.imagensPorPagina)) {
       this.indiceAtual = (this.indiceAtual + this.imagensPorPagina) % this.cardImages.length;
     }
+  }
+
+  changeCard1() {
+    this.cardBodyVisible1 = !this.cardBodyVisible1;
+  }
+  changeCard2() {
+    this.cardBodyVisible2 = !this.cardBodyVisible2;
+  }
+  changeCard3() {
+    this.cardBodyVisible3 = !this.cardBodyVisible3;
+  }
+  changeCard4() {
+    this.cardBodyVisible4 = !this.cardBodyVisible4;
+  }
+  changeCard5() {
+    this.cardBodyVisible5 = !this.cardBodyVisible5;
   }
 }

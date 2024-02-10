@@ -78,56 +78,61 @@
         <h1>QUEM SERÁ RESPONSÁVEL POR CONDUZIR O SEU PROCESSO?</h1>
         <div class="responsavel-body">
             <img src="./assets/profile.jpg">
-            <p>Me chamo Lyandra Eduarda, sou casada e mãe de uma linda filha. Em 2017, minha trajetória profissional me apresentou ao fascinante universo dos vistos. Desde então, dedico-me constantemente a aprimorar meus conhecimentos em assuntos internacionais.</p>
+            <div class="responsavel-text">
+                <p>Me chamo Lyandra Eduarda, sou casada e mãe de uma linda filha. Em 2017, minha trajetória profissional me apresentou ao fascinante universo dos vistos. Desde então, dedico-me constantemente a aprimorar meus conhecimentos em assuntos internacionais.</p>
             <p>A Vistos &CO. é fruto da minha sólida experiência e paixão por seguir algo que sempre trouxe brilho aos meus olhos: tornar realidade os sonhos de pessoas como eu.</p>
+            </div>
         </div>
     </section>
 
     <section class="duvidas">
+        <div class="duvidas-title">
+            <h1>DÚVIDAS FREQUENTES</h1>
+        </div>
         <div class="duvidas-cards">
             <div class="duvida-card">
                 <div class="duvida-card-title">
                     <h3>Quais são as opções de pagamento disponíveis?</h3>
-                    <button><img src=""></button>
+                    <button (click)="changeCard1()" [style.transform]="cardBodyVisible1 == true ? 'rotate(-90deg)' : 'rotate(90deg)'"><img src="./assets/arrow2.png"></button>
                 </div>
-                <div class="duvida-card-body">
-                    <p>Nossa assessoria oferece diversas opções de pagamento para maior comodidade dos clientes. O pagamento dos nossos serviços pode ser feito através de PIX, boleto ou parcelado incluindo as taxas da plataforma de pagamento. O pagamento das Taxas Consulares podem ser feitos via boleto ou pelo cartão de crédito do cliente.</p>
-                </div>
-            </div>
-            <div class="duvida-card">
-                <div class="duvida-card-title">
-                    <h3>Quais são as opções de pagamento disponíveis?</h3>
-                    <button><img src=""></button>
-                </div>
-                <div class="duvida-card-body">
-                    <p>Nossa assessoria oferece diversas opções de pagamento para maior comodidade dos clientes. O pagamento dos nossos serviços pode ser feito através de PIX, boleto ou parcelado incluindo as taxas da plataforma de pagamento. O pagamento das Taxas Consulares podem ser feitos via boleto ou pelo cartão de crédito do cliente.</p>
+                <div *ngIf="cardBodyVisible1">
+                    <p [style]="'margin-bottom: 20px'">Nossa assessoria oferece diversas opções de pagamento para maior comodidade dos clientes. O pagamento dos nossos serviços pode ser feito através de PIX, boleto ou parcelado incluindo as taxas da plataforma de pagamento. O pagamento das Taxas Consulares podem ser feitos via boleto ou pelo cartão de crédito do cliente.</p>
                 </div>
             </div>
             <div class="duvida-card">
                 <div class="duvida-card-title">
                     <h3>Quais são as opções de pagamento disponíveis?</h3>
-                    <button><img src=""></button>
+                    <button (click)="changeCard2()" [style.transform]="cardBodyVisible2 == true ? 'rotate(-90deg)' : 'rotate(90deg)'"><img src="./assets/arrow2.png"></button>
                 </div>
-                <div class="duvida-card-body">
-                    <p>Nossa assessoria oferece diversas opções de pagamento para maior comodidade dos clientes. O pagamento dos nossos serviços pode ser feito através de PIX, boleto ou parcelado incluindo as taxas da plataforma de pagamento. O pagamento das Taxas Consulares podem ser feitos via boleto ou pelo cartão de crédito do cliente.</p>
-                </div>
-            </div>
-            <div class="duvida-card">
-                <div class="duvida-card-title">
-                    <h3>Quais são as opções de pagamento disponíveis?</h3>
-                    <button><img src=""></button>
-                </div>
-                <div class="duvida-card-body">
-                    <p>Nossa assessoria oferece diversas opções de pagamento para maior comodidade dos clientes. O pagamento dos nossos serviços pode ser feito através de PIX, boleto ou parcelado incluindo as taxas da plataforma de pagamento. O pagamento das Taxas Consulares podem ser feitos via boleto ou pelo cartão de crédito do cliente.</p>
+                <div *ngIf="cardBodyVisible2">
+                    <p [style]="'margin-bottom: 20px'">Nossa assessoria oferece diversas opções de pagamento para maior comodidade dos clientes. O pagamento dos nossos serviços pode ser feito através de PIX, boleto ou parcelado incluindo as taxas da plataforma de pagamento. O pagamento das Taxas Consulares podem ser feitos via boleto ou pelo cartão de crédito do cliente.</p>
                 </div>
             </div>
             <div class="duvida-card">
                 <div class="duvida-card-title">
                     <h3>Quais são as opções de pagamento disponíveis?</h3>
-                    <button><img src=""></button>
+                    <button (click)="changeCard3()" [style.transform]="cardBodyVisible3 == true ? 'rotate(-90deg)' : 'rotate(90deg)'"><img src="./assets/arrow2.png"></button>
                 </div>
-                <div class="duvida-card-body">
-                    <p>Nossa assessoria oferece diversas opções de pagamento para maior comodidade dos clientes. O pagamento dos nossos serviços pode ser feito através de PIX, boleto ou parcelado incluindo as taxas da plataforma de pagamento. O pagamento das Taxas Consulares podem ser feitos via boleto ou pelo cartão de crédito do cliente.</p>
+                <div *ngIf="cardBodyVisible3">
+                    <p [style]="'margin-bottom: 20px'">Nossa assessoria oferece diversas opções de pagamento para maior comodidade dos clientes. O pagamento dos nossos serviços pode ser feito através de PIX, boleto ou parcelado incluindo as taxas da plataforma de pagamento. O pagamento das Taxas Consulares podem ser feitos via boleto ou pelo cartão de crédito do cliente.</p>
+                </div>
+            </div>
+            <div class="duvida-card">
+                <div class="duvida-card-title">
+                    <h3>Quais são as opções de pagamento disponíveis?</h3>
+                    <button (click)="changeCard4()" [style.transform]="cardBodyVisible4 == true ? 'rotate(-90deg)' : 'rotate(90deg)'"><img src="./assets/arrow2.png"></button>
+                </div>
+                <div *ngIf="cardBodyVisible4">
+                    <p [style]="'margin-bottom: 20px'">Nossa assessoria oferece diversas opções de pagamento para maior comodidade dos clientes. O pagamento dos nossos serviços pode ser feito através de PIX, boleto ou parcelado incluindo as taxas da plataforma de pagamento. O pagamento das Taxas Consulares podem ser feitos via boleto ou pelo cartão de crédito do cliente.</p>
+                </div>
+            </div>
+            <div class="duvida-card">
+                <div class="duvida-card-title">
+                    <h3>Quais são as opções de pagamento disponíveis?</h3>
+                    <button (click)="changeCard5()" [style.transform]="cardBodyVisible5 == true ? 'rotate(-90deg)' : 'rotate(90deg)'"><img src="./assets/arrow2.png"></button>
+                </div>
+                <div *ngIf="cardBodyVisible5">
+                    <p [style]="'margin-bottom: 20px'">Nossa assessoria oferece diversas opções de pagamento para maior comodidade dos clientes. O pagamento dos nossos serviços pode ser feito através de PIX, boleto ou parcelado incluindo as taxas da plataforma de pagamento. O pagamento das Taxas Consulares podem ser feitos via boleto ou pelo cartão de crédito do cliente.</p>
                 </div>
             </div>
         </div>
