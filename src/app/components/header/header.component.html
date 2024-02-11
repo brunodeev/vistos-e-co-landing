@@ -1,8 +1,14 @@
 <header class="app-header">
     <div class="navigate">
+        <span class="divider"></span>
         <img (click)="null" src="./assets/logo.png"/>
-    
-        <nav>
+        <span class="divider"></span>
+        <div class="menu-icon" (click)="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav [class.menuClass]="menuVariable">
             <a href="">Assessorias</a>
             <a href="">Contato</a>
             <a href="">Por que nos escolher</a>

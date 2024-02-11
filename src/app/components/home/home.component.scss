@@ -1262,29 +1262,269 @@ main {
 }
 
 @media (max-width: 500px) {
+
+    .main-section {
+        height: 500px;
+        justify-content: end;
+
+        .headline {
+            padding: 0px 20px;
+        }
+
+        button {
+            margin: 20px 20px 60px 20px;
+        }
+    }
+
+    .second-section {
+        .second-headline {
+            padding-top: 20px;
+
+            h1 {
+                width: 380px;
+                font-size: 26px;
+                font-weight: 600;
+                line-height: 26px;
+                margin-bottom: 10px;
+            }
+        
+            p {
+                width: 360px;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 23px;
+                margin: 20px 0px 50px 0px;
+            }
+        }
+        
+    }
+
+    .third-section {
+        .third-headline {
+            h1 {
+                font-size: 26px;
+                margin: 50px 0px;
+                width: 300px;
+                line-height: 26px;
+                text-align: center;
+            }
+    
+            .card-grid {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 20px;
+                
+                .card-plane {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    align-items: center;
+                    width: 100%;
+                    padding: 0px 50px;
+                    margin-bottom: 30px;
+        
+                    img {
+                        max-width: 80px;
+                        margin-bottom: 20px;
+                        margin-right: 15px;
+                    }
+        
+                    p {
+                        width: 100%;
+                        text-align: center;
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    .assessorias {
+        .nossas-assessorias {
+            h1 {
+                font-size: 26px;
+                color: #ffffff;
+            }
+        }
+    
+        .cards-assessoria {
+            background-color: #083d77;
+            width: 100%;
+            height: 680px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    
+            .cards-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                overflow: hidden;
+                width: 100%;
+                position: absolute;
+    
+                img {
+                    z-index: 1;
+                    position: relative;
+                    height: 450px;
+                    margin: 50px 30px;
+                    transition: all 0.3s ease;
+    
+                    &:hover {
+                        cursor: pointer;
+                        box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.15);
+                        border-radius: 23px;
+                        transform: scale(1.05);
+                        transition: all 0.3s ease;
+                    }
+                }
+            }
+    
+            .arrow1 {
+                margin-left: 10px;
+                transform: rotate(180deg);
+                width: 30px;
+                height: 30px;
+                border-radius: 30px;
+                padding-top: 2px;
+                padding-left: 2px;
+                border: none;
+                z-index: 2;
+                background-color: #083e77;
+    
+                img {
+                    width: 10px;
+                    height: 15px;
+                }
+    
+                &:hover {
+                    transform: scale(1.05) rotate(180deg);
+                }
+                
+            }
+    
+            .arrow2 {
+                margin-right: 10px;
+                width: 30px;
+                height: 30px;
+                border-radius: 30px;
+                padding-top: 2px;
+                padding-left: 2px;
+                border: none;
+                z-index: 2;
+                background-color: #083e77;
+    
+                img {
+                    width: 10px;
+                    height: 15px;
+                }
+                
+            }
+    
+    
+        }
+    
+        .imagem {
+                width: 100%;
+                height: 750px;
+                position: absolute;
+                object-fit: cover;
+                opacity: .2;
+        }
+    }
+
+    .razoes {
+        h1 {
+            font-size: 26px;
+            line-height: 26px;
+            color: #083e77;
+            margin: 50px 0px;
+            width: 360px;
+            text-align: center;
+        }
+    
+        .razoes-cards {
+            padding: 0px 20px;
+            .razoes-card {
+                background-color: #083e77e4;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 30px 40px;
+                border-radius: 15px;
+                box-shadow: 3px 3px 12px 2px rgba(0,0,0,0.2);
+    
+                p {
+                    color: #f9f9f9;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    text-align: center;
+                }
+            }
+        }
+    
+    }
+
+    .missao {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-image: linear-gradient( 150deg, #fc6346, #e6725a);
+        color: #f9f9f9;
+        padding: 40px 45px;
+    
+        h1 {
+            font-size: 26px;
+        }
+    
+        span {
+            content: '';
+            background-color: #f9f9f9;
+            width: 180px;
+            height: 2px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+    
+        .missao-text {
+            text-align: center;
+            width: 100%;
+            line-height: 22px;
+        }
+    }
+
     .responsavel {
+        padding: 50px 30px;
     
         h1 {
             color: #083d77;
-            font-size: 24px;
-            width: 400px;
+            font-size: 26px;
+            width: 100%;
             text-align: center;
-            line-height: 30px;
+            line-height: 26px;
         }
     
         .responsavel-body {
-    
             img {
                 width: 200px;
-                border-radius: 20%;
-                box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.1);
-                margin: 20px 0px;
+                border-radius: 10%;
+                box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.05);
+                margin-bottom: 40px;
             }
     
             .responsavel-text {
                 display: flex;
                 flex-direction: column;
-                width: 300px;
+                width: 100%;
     
                 p {
                     color: #083d77;
@@ -1293,6 +1533,73 @@ main {
                 }
             }
             
+        }
+    }
+
+    .duvidas {
+        .duvidas-title {
+            background-image: linear-gradient( 150deg, #fc6346, #e6725a);
+            width: 100%;
+            padding: 20px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            h1 {
+                color: #f9f9f9;
+                font-size: 26px;
+            }
+        }
+    
+        .duvidas-cards {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 20px;
+    
+            .duvida-card {
+                width: 100%;
+                color: #083d77;
+                border-radius: 15px;
+                border: #fc6346 3px solid;
+                padding: 0px 20px;
+                margin-bottom: 20px;
+    
+                &:hover {
+                    cursor: pointer;
+                }
+    
+                .duvida-card-title {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+    
+                    h3 {
+                        font-size: 17px;
+                        line-height: 20px;
+                    }
+
+                    button {
+                        border: none;
+                        background-color: transparent;
+                        transform: rotate(90deg);
+                        width: 70px;
+                        height: 70px;
+                        background-color: transparent;
+    
+                        img {
+                            width: 10px;
+                        }
+    
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -1305,7 +1612,7 @@ main {
             margin: 30px 0px;
     
             h1 {
-                font-size: 23px;
+                font-size: 26px;
                 line-height: 23px;
             }
             h3 {
@@ -1378,17 +1685,26 @@ main {
     }
 
     .depoimentos {
+        padding: 0px 25px;
         h1 {
             margin-top: 50px;
-            font-size: 20px;
+            font-size: 26px;
+            width: 100%;
+            text-align: center;
         }
     
         p {
-            width: 300px;
+            width: 100%;
             text-align: center;
             margin: 50px 0px;
             font-weight: 500;
             line-height: 20px;
+        }
+    }
+
+    .direitos {
+        p {
+            font-size: 12px;
         }
     }
 }

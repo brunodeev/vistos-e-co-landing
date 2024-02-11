@@ -9,5 +9,9 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+  menuVariable: boolean = true;
 
+  toggleMenu() {
+    this.menuVariable = !this.menuVariable;
+  }
 }
