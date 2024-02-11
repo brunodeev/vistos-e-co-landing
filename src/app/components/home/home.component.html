@@ -37,22 +37,22 @@
         </div>
     </section>
 
-    <section class="assessorias">
+    <section class="assessorias" id="assessorias">
         <div class="nossas-assessorias">
             <h1>NOSSAS ASSESSORIAS</h1>
         </div>
         
         <div class="cards-assessoria">
-            <button class="arrow1" (click)="previous()"><img src="./assets/arrow2.png"></button>
-            <button class="arrow2" (click)="next()"><img src="./assets/arrow2.png"></button>
+            <button class="arrow1"><img src="./assets/arrow2.png"></button>
+            <button class="arrow2"><img src="./assets/arrow2.png"></button>
             <div class="cards-container">
-                <img *ngFor="let image of getImagensExibicao()" [src]="image">
+                <img *ngFor="let image of cardImages" [src]="image">
             </div>
         </div>
         <img class="imagem" src="./assets/passport.jpg">
     </section>
 
-    <section class="razoes">
+    <section class="razoes" id="razoes">
         <h1>RAZÕES PARA ESCOLHER A VISTOS & CO.</h1>
 
         <div class="razoes-cards">
@@ -160,17 +160,17 @@
         </div>
     </section>
 
-    <section class="depoimentos">
+    <section class="depoimentos" id="depoimentos">
         <h1>DEPOIMENTOS DE CLIENTES</h1>
         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et bibendum arcu. Phasellus purus orci, pulvinar in est accumsan, efficitur imperdiet nibh. Sed mauris risus, vulputate a maximus eget, semper in justo. Donec ut tellus quis sapien sodales vulputate a in tellus. Maecenas efficitur neque quam, mollis vehicula felis ornare et. Etiam feugiat laoreet nisi non pharetra. In hac habitasse platea dictumst. Nullam et mollis lorem, ac varius lorem”</p>
         <h3>- Vonisleia</h3>
     </section>
 
-    <section class="contato">
+    <section class="contato" id="contato">
         <h3>Contato</h3>
         <span></span>
-        <p>+55 (00) 99898-9898 - Lyandra</p>
-        <img src="./assets/instagram.png">
+        <p>+55 (61) 99867-7496 - Lyandra</p>
+        <a href="https://www.instagram.com/vistos.co/" target="_blank"><img src="https://icongr.am/jam/instagram.svg?size=128&color=ffffff"></a>
     </section>
 
     <section class="direitos">

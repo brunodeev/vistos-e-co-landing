@@ -1,7 +1,7 @@
 <header class="app-header">
     <div class="navigate">
         <span class="divider"></span>
-        <img (click)="null" src="./assets/logo.png"/>
+        <a href="#"><img src="./assets/logo.png"/></a>
         <span class="divider"></span>
         <div class="menu-icon" (click)="toggleMenu()">
             <span></span>
@@ -9,10 +9,10 @@
             <span></span>
         </div>
         <nav [class.menuClass]="menuVariable">
-            <a href="">Assessorias</a>
-            <a href="">Contato</a>
-            <a href="">Por que nos escolher</a>
-            <a href="">Depoimentos</a>
+            <a href="#assessorias">Assessorias</a>
+            <a href="#razoes">Por que nos escolher</a>
+            <a href="#depoimentos">Depoimentos</a>
+            <a href="#contato">Contato</a>
         </nav>
     </div>
 </header>
