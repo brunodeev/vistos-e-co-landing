@@ -471,6 +471,7 @@ main {
         h1 {
             font-size: 30px;
             line-height: 30px;
+            text-align: center;
         }
         h3 {
             font-weight: 500;
@@ -586,6 +587,10 @@ main {
         font-weight: 400;
         margin-bottom: 10px;
         font-style: none;
+    }
+
+    a {
+        width: 25px;
     }
 
     img {
@@ -1579,8 +1584,8 @@ main {
                     justify-content: space-between;
     
                     h3 {
-                        font-size: 17px;
-                        line-height: 20px;
+                        font-size: 15px;
+                        line-height: 16px;
                     }
 
                     button {

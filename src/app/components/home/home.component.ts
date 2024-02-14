@@ -11,15 +11,15 @@ import { CommonModule } from '@angular/common';
 })
 export class HomeComponent {
 
+  cardImages: string[] = [
+    './assets/card1.png', './assets/card2.png', './assets/card3.png', './assets/card4.png', './assets/card5.png', './assets/card6.png', './assets/card7.png', './assets/card8.png', './assets/card9.png'
+  ];
+
   cardBodyVisible1: boolean = false;
   cardBodyVisible2: boolean = false;
   cardBodyVisible3: boolean = false;
   cardBodyVisible4: boolean = false;
   cardBodyVisible5: boolean = false;
-
-  cardImages: string[] = [
-    './assets/card.png', './assets/card.png'
-  ];
 
   changeCard1() {
     this.cardBodyVisible1 = !this.cardBodyVisible1;
