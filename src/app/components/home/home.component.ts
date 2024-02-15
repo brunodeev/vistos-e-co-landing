@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { CommonModule } from '@angular/common';
+import { NextDirective } from '../../next.directive';
+import { PrevDirective } from '../../prev.directive';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeaderComponent, CommonModule],
+  imports: [HeaderComponent, CommonModule, NextDirective, PrevDirective],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })

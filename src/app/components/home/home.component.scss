@@ -200,7 +200,7 @@ main {
         .cards-container {
             display: flex;
             flex-direction: row;
-            justify-content: flex-start;
+            justify-content: center;
             align-items: center;
             overflow: hidden;
             width: 100%;
@@ -209,37 +209,33 @@ main {
             img {
                 z-index: 1;
                 position: relative;
-                height: 450px;
+                height: 400px;
+                width: 370px;
+                object-fit: cover;
                 margin: 50px 0px 50px 50px;
-                transition: all 0.3s ease;
-
-                &:hover {
-                    cursor: pointer;
-                    box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.15);
-                    border-radius: 23px;
-                    transform: scale(1.05);
-                    transition: all 0.3s ease;
-                }
+                border-radius: 16px;
             }
         }
 
         .arrow1 {
             margin-left: 10px;
             transform: rotate(180deg);
-            width: 60px;
-            height: 60px;
+            width: 40px;
+            height: 40px;
             border-radius: 30px;
             padding-left: 5px;
+            padding-top: 3px;
             border: none;
             z-index: 2;
-            background-color: #083e77;
+            background-color: #083d77;
 
             img {
-                width: 25px;
-                height: 40px;
+                width: 15px;
+                height: 23px;
             }
 
             &:hover {
+                cursor: pointer;
                 transform: scale(1.05) rotate(180deg);
             }
             
@@ -247,23 +243,29 @@ main {
 
         .arrow2 {
             margin-right: 10px;
-            width: 60px;
-            height: 60px;
+            width: 40px;
+            height: 40px;
             border-radius: 30px;
             padding-left: 5px;
+            padding-top: 2px;
             border: none;
             z-index: 2;
-            background-color: #083e77;
+            background-color: #083d77;
 
             img {
-                width: 25px;
-                height: 40px;
+                width: 15px;
+                height: 23px;
+            }
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.05);
             }
             
         }
-
-
+        
     }
+    
 
     .imagem {
             width: 100%;

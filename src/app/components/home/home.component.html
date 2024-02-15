@@ -43,12 +43,14 @@
         </div>
         
         <div class="cards-assessoria">
-            <button class="arrow1"><img src="./assets/arrow2.png"></button>
-            <button class="arrow2"><img src="./assets/arrow2.png"></button>
             <div class="cards-container">
-                <img *ngFor="let image of cardImages" [src]="image">
+                <img class="item" *ngFor="let image of cardImages; let i = index" [src]="image">
             </div>
+            <button class="arrow1" appPrev><img src="./assets/arrow2.png"></button>
+            <button class="arrow2" appNext><img src="./assets/arrow2.png"></button>
+            
         </div>
+        <button>Escolher</button>
         <img class="imagem" src="./assets/passport.jpg">
     </section>
 
